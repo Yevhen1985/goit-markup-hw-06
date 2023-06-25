@@ -243,6 +243,13 @@ img {
     padding-top: 120px;
 }
 
+.container-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
 .we-are-list {
     display: flex;
     gap: 24px;
@@ -262,7 +269,8 @@ img {
 }
 
 .we-are-block {
-    flex-basis: calc((100%-3*24px)/4);
+    max-width: 264px;
+   width: calc((100% - 72px) / 4);
 }
 
 .we-are-icon {
@@ -289,7 +297,8 @@ img {
     font-size: var(--text-font-size);
     line-height: var(--standart-line-height);
     letter-spacing: var(--standart-letter-spacing);
-    color: var(--text-small)
+    color: var(--text-small);
+
 }
 
 /* What are we doing */
@@ -340,12 +349,6 @@ img {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
-}
-
-.team-container {
-    width: 264px;
-    height: 428px;
-    
 }
 
 .team-title {
@@ -493,7 +496,6 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--btn-blue);
-    margin-right: 76px;
     display: inline-block;
     margin-bottom: 16px;}
 
@@ -629,6 +631,7 @@ img {
    top: 50%;
    transform: translate(-50%, -50%) scale(1);
    transition: transform 350ms linear;
+   padding: 72px 24px 24px 24px;
 
    background-color: #FCFCFC;
    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -941,14 +944,13 @@ img {
     line-height: 1.20;
     letter-spacing: var(--standart-letter-spacing);
     color: var(--title-color);
-    margin: 32px 0 8px 16px;}
+    margin-bottom: 8px;}
 
 .pics-text {
     font-size: var(--text-font-size);
     line-height: var(--standart-line-height);
     letter-spacing: var(--standart-letter-spacing);
-    color: var(--text-small);
-    margin: 0 0 32px 16px;}
+    color: var(--text-small);}
 
 .apps-card {
     background: #ffffff;
